@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "▶ Updating Homebrew..."
+brew update
+
+echo "▶ Upgrading formulae..."
+brew upgrade
+
+echo "▶ Upgrading casks..."
+brew upgrade --cask
+
+echo "▶ Cleaning up..."
+brew cleanup
+
+echo "✔ Homebrew update complete"
